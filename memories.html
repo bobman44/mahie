@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fav Pics ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="main-content">
+    <nav class="navigation">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="apology.html">My Apology</a></li>
+            <li><a href="#memories" class="active">My Fav Pics</a></li>
+            <li><a href="love.html">Why I Love You</a></li>
+        </ul>
+    </nav>
+
+    <main class="memories-content">
+        <h1 class="main-headline">¡Que bonita!</h1>
+
+        <div class="memory-gallery">
+            <div class="memory-card">
+                <img src="assets/images/memory1.jpeg" alt="Memory 1">
+                <div class="memory-caption">
+                    <h3>My first pic of you <3</h3>
+                    <p>I saw this pic clicked randomly on my i-pad and I just had to ask her out <33</p>
+                </div>
+            </div>
+
+            <div class="memory-card">
+                <img src="assets/images/memory2.jpeg" alt="Memory 2">
+                <div class="memory-caption">
+                    <h3>That Perfect Hiking Picture</h3>
+                    <p>My photography skills proved solid here, but of course the subject made it easy :3</p>
+                </div>
+            </div>
+
+            <div class="memory-card">
+                <img src="assets/images/memory3.jpeg" alt="Memory 3">
+                <div class="memory-caption">
+                    <h3>A baddie</h3>
+                    <p>Found this hot girl on my phone, do you know her?</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="audio-player">
+        <audio id="bgMusic" loop>
+            <source src="assets/music/background-music.mp3" type="audio/mp3">
+        </audio>
+        <button id="musicToggle" onclick="toggleMusic()">
+            <i class="fas fa-music"></i>
+        </button>
+    </div>
+    <script src="js/music-control.js"></script>
+</body>
+</html>

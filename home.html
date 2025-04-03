@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Love ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="main-content">
+    <nav class="navigation">
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="apology.html">My Apology</a></li>
+            <li><a href="memories.html">My Fav Pics</a></li>
+            <li><a href="love.html">Why I Love You</a></li>
+        </ul>
+    </nav>
+
+    <main class="home-content">
+        <h1 class="main-headline">&lt;&gt; I'm not so good at writing essays, but I can write some lines of code... &lt;/&gt;</h1>
+        <div class="featured-image">
+            <img src="assets/images/placeholder.jpeg" alt="A beautiful woman" class="hero-image">
+        </div>
+
+        <div class="opening-message">
+            <p>Hey babe, I know you felt second yesterday and I never want you to feel that way, cause you will always be FIRST to me. 
+               This is my way of showing you just how much you mean to me and how truly sorry I am.</p>
+        </div>
+
+        <div class="navigation-cards">
+            <a href="apology.html" class="card">
+                <i class="fas fa-heart"></i>
+                <h3>My Apology</h3>
+                <p>From the bottom of my heart...</p>
+            </a>
+            <a href="memories.html" class="card">
+                <i class="fas fa-camera-retro"></i>
+                <h3>My fav pics</h3>
+                <p>I love every single one, but I've gotta pick a few...</p>
+            </a>
+            <a href="love.html" class="card">
+                <i class="fas fa-star"></i>
+                <h3>Why I Love You</h3>
+                <p>Just a few reasons why you're special...</p>
+            </a>
+        </div>
+    </main>
+
+    <div class="audio-player">
+        <audio id="bgMusic" loop>
+            <source src="assets/music/background-music.mp3" type="audio/mp3">
+        </audio>
+        <button id="musicToggle" onclick="toggleMusic()">
+            <i class="fas fa-music"></i>
+        </button>
+    </div>
+    <script src="js/music-control.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why I Love You ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="main-content">
+    <nav class="navigation">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="apology.html">My Apology</a></li>
+            <li><a href="memories.html">My Fav Pics</a></li>
+            <li><a href="#love" class="active">Why I Love You</a></li>
+        </ul>
+    </nav>
+
+    <main class="love-content">
+        <h1 class="main-headline">Why I Love You</h1>
+
+        <div class="featured-love-image">
+            <img src="assets/images/love-featured.jpeg" alt="My Beautiful Love" class="love-hero-image">
+        </div>
+        <p class="image-caption">What's there not to love about you?</p>
+
+        <div class="love-grid">
+            <div class="love-reason">
+                <i class="fas fa-smile"></i>
+                <h3>Your Beautiful Laughter</h3>
+                <p>The way your giggle deeply when you crack up, and how your whole face lights up... it's literally my favorite view</p>
+            </div>
+
+            <div class="love-reason">
+                <i class="fas fa-heart"></i>
+                <h3>Your Kind Heart</h3>
+                <p>You care so deeply about everyone around you. The way you look after people, even when you're having a tough day yourself</p>
+            </div>
+
+            <div class="love-reason">
+                <i class="fas fa-star"></i>
+                <h3>Your Intelligence</h3>
+                <p>I love how smart you are and how you manage your numerous tasks every day with such elegance. And the way you study so nerdily</p>
+            </div>
+
+            <div class="love-reason">
+                <i class="fas fa-magic"></i>
+                <h3>Your Spirit</h3>
+                <p>Your energy is contagious, and you've got a great sense of humor that always keeps me smiling</p>
+            </div>
+        </div>
+    </main>
+
+    <div class="audio-player">
+        <audio id="bgMusic" loop>
+            <source src="assets/music/background-music.mp3" type="audio/mp3">
+        </audio>
+        <button id="musicToggle" onclick="toggleMusic()">
+            <i class="fas fa-music"></i>
+        </button>
+    </div>
+    <script src="js/music-control.js"></script>
+</body>
+</html>

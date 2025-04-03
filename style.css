@@ -1,0 +1,331 @@
+/* ========== Base Styles ========== */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    min-height: 100vh;
+}
+
+.main-content {
+    padding-top: 100px; /* Space for fixed nav */
+}
+
+/* ========== Navigation ========== */
+.navigation {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    color: #ff6b6b;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navigation a:hover {
+    color: #ff5252;
+}
+
+/* ========== Section Layouts ========== */
+.memories-content,
+.love-content,
+.apology-content,
+.home-content {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ========== Headline ========== */
+.main-headline {
+    text-align: center;
+    color: #fff;
+    font-size: 2.5rem;
+    margin: 2rem 0 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* ========== Memory Gallery ========== */
+.memory-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.memory-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.memory-card:hover {
+    transform: translateY(-5px);
+}
+
+.memory-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.memory-caption {
+    padding: 1.5rem;
+}
+
+.memory-caption h3 {
+    color: #ff6b6b;
+    margin-bottom: 0.5rem;
+}
+
+/* ========== Love Page ========== */
+.love-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.love-reason {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.love-reason:hover {
+    transform: translateY(-5px);
+}
+
+.love-reason i {
+    font-size: 2.5rem;
+    color: #ff6b6b;
+    margin-bottom: 1rem;
+}
+
+.love-reason h3 {
+    color: #ff6b6b;
+    margin-bottom: 1rem;
+}
+
+.featured-love-image {
+    text-align: center;
+    margin: 3rem 0;
+    width: 400px;  /* Set fixed width for circular container */
+    height: 400px;  /* Set fixed height for circular container */
+    margin: 3rem auto;  /* Center the container */
+    border-radius: 50%;  /* Make it circular */
+    overflow: hidden;  /* Ensure image stays within circle */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background: white;
+    padding: 5px;  /* Add small padding for border effect */
+}
+
+.love-hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ensure image covers the space properly */
+    border-radius: 50%;  /* Make image circular */
+    transition: transform 0.3s ease;
+}
+
+.love-hero-image:hover {
+    transform: scale(1.05);  /* Slightly smaller scale effect for circular container */
+}
+
+/* ========== Apology Page ========== */
+.apology-content {
+    padding: 6rem 2rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.apology-letter {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;        /* 🟢 NEW: Reduce width */
+    margin: 0 auto;           /* Center it */
+}
+
+.dear, .closing {
+    font-style: italic;
+    color: #ff6b6b;
+}
+
+.apology-section {
+    margin: 2rem 0;
+}
+
+.apology-section h2 {
+    color: #ff6b6b;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.signature {
+    text-align: right;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    color: #ff6b6b;
+}
+
+
+/* ========== Home Page (Restored Old Style) ========== */
+.home-content .main-headline {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    padding: 0 1rem;
+    color: #fff;
+    line-height: 1.4;
+}
+
+.featured-image {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.hero-image {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.opening-message {
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    line-height: 1.6;
+}
+
+.navigation-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #ff6b6b;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    margin: 1rem 0;
+}
+
+.card p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* ========== Audio Player ========== */
+.audio-player {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#musicToggle {
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+#musicToggle:hover {
+    transform: scale(1.1);
+}
+
+#musicToggle.playing {
+    background: #ff6b6b;
+    color: white;
+}
+
+/* ========== Responsive Adjustments ========== */
+@media (max-width: 768px) {
+    .navigation ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .main-content {
+        padding-top: 120px;
+    }
+
+    .main-headline {
+        font-size: 2rem;
+        padding: 0 1rem;
+    }
+
+    .memory-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .apology-letter {
+        padding: 2rem;
+        max-width: 90%;
+    }
+
+
+    .memories-content,
+    .love-content,
+    .home-content {
+        padding-top: 6rem;
+    }
+}
+
+.image-caption {
+    text-align: center;
+    color: #ff6b6b;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    font-style: italic;
+}
